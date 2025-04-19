@@ -1,0 +1,26 @@
+{
+  "name": "locar-aframe",
+  "version": "0.0.1",
+  "description": "Location-based AR from AR.js - A-Frame components.",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/locar-aframe.umd.js",
+  "module": "./dist/locar-aframe.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/locar-aframe.es.js",
+      "require": "./dist/locar-aframe.umd.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build && npm pack"
+  },
+  "devDependencies": {
+    "vite": "^5.4.8"
+  },
+  "dependencies": {
+    "three": "^0.175.0",
+    "locar": "^0.0.11"
+  }
+}
