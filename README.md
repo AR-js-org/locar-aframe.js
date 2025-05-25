@@ -32,6 +32,7 @@ Parameters:
 - `simulateLongitude`   (number) - fake latitude to use
 - `simulateAltitude`    (number) - fake altitude to use
 - `positionMinAccuracy` (number) - minimum accuracy in metres for GPS positions to be accepted.
+- `smoothingFactor`     (number) - smoothing factor for sensors, the same concept as in original AR.js.
 
 ## locar-entity-place
 
