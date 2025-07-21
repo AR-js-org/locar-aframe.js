@@ -1,5 +1,7 @@
 # locar-aframe.js 
 
+**PR16 branch version - untested on iOS devices. Requires `locar.js` from the PR16 branch, version `0.0.13-pre3`. You may need to edit the path to the tarball for this version of `locar.js` by editing the `package.json`.**
+
 Location-based AR from AR.js - A-Frame components.
 
 A-Frame components include: 
