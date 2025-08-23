@@ -1,6 +1,6 @@
 {
   "name": "locar-aframe",
-  "version": "0.0.4-pre2",
+  "version": "0.1.0",
   "description": "Location-based AR from AR.js - A-Frame components.",
   "files": [
     "dist"
@@ -21,6 +21,6 @@
   },
   "dependencies": {
     "three": "^0.175.0",
-    "locar": "file:../locar.js/locar-0.0.13-pre3.tgz"
+    "locar": "^0.1.0"
   }
 }
