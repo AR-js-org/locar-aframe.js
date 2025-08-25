@@ -1,7 +1,5 @@
 # locar-aframe.js 
 
-**PR16 branch version - untested on iOS devices. Requires `locar.js` from the PR16 branch, version `0.0.13-pre3`. You may need to edit the path to the tarball for this version of `locar.js` by editing the `package.json`.**
-
 Location-based AR from AR.js - A-Frame components.
 
 A-Frame components include: 
@@ -30,11 +28,12 @@ Must be added to an A-Frame camera entity e.g. `<a-camera>` or `<a-entity camera
 
 Parameters:
 
-- `simulateLatitude`    (number) - fake latitude to use
-- `simulateLongitude`   (number) - fake latitude to use
-- `simulateAltitude`    (number) - fake altitude to use
-- `positionMinAccuracy` (number) - minimum accuracy in metres for GPS positions to be accepted.
-- `smoothingFactor`     (number) - smoothing factor for sensors, the same concept as in original AR.js.
+- `simulateLatitude`      (number)  - fake latitude to use
+- `simulateLongitude`     (number)  - fake latitude to use
+- `simulateAltitude`      (number)  - fake altitude to use
+- `positionMinAccuracy`   (number)  - minimum accuracy in metres for GPS positions to be accepted.
+- `smoothingFactor`       (number)  - smoothing factor for sensors, the same concept as in original AR.js.
+- `enablePermissionDialog`(boolean) - decides if device orientation permission dialog is shown on iOS devices.
 
 ## locar-entity-place
 
