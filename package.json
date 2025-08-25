@@ -1,6 +1,6 @@
 {
   "name": "locar-aframe",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Location-based AR from AR.js - A-Frame components.",
   "files": [
     "dist"
