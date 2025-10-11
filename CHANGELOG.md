@@ -1,5 +1,9 @@
 # Updates
 
+## 0.1.2 (2025-10-11)
+
+Now handles the possibility of `locar-camera` not being initialised when we try to set the position of a `locar-entity-place` (see issue #3). This appears to occur when we attach `locar-entity-place` to `a-entity` entities, rather than specific primitives such as `a-box`.
+
 ## 0.1.1 (2025-08-25)
 
 `locar-camera` Now takes `enablePermissionDialog` parameter, matching the three.js API and allowing customisation of the iOS permissions dialog. Many thanks to @darianwwu for this!
