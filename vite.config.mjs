@@ -4,11 +4,11 @@ import { defineConfig } from 'vite';
 export default defineConfig({
     build: {
         lib: {
-            entry: resolve(__dirname, 'lib/aframe/main.js'),
+            entry: resolve(import.meta.dirname, 'lib/aframe/main.js'),
             name: 'locar-aframe',
             fileName: format => `locar-aframe.${format}.js`
         },
-        rollupOptions: {
+        rolldownOptions: {
             external: ['three', 'locar'],
             output: {
                 globals: {
@@ -16,7 +16,6 @@ export default defineConfig({
                     locar: 'LocAR'
                 }
             }
-        },
-		minify: 'none'
+        }
     }
 });

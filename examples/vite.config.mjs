@@ -3,7 +3,7 @@ import { resolve } from 'path';
 
 const entries = { main: 'index.html' };
 ['basic', 'with-js', 'with-api-comm'].forEach ( example => {
-    entries[example] = resolve(__dirname, `${example}/index.html`);
+    entries[example] = resolve(import.meta.dirname, `${example}/index.html`);
 });
 
 export default defineConfig({
