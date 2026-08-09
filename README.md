@@ -28,12 +28,15 @@ Must be added to an A-Frame camera entity e.g. `<a-camera>` or `<a-entity camera
 
 Parameters:
 
-- `simulateLatitude`      (number)  - fake latitude to use
-- `simulateLongitude`     (number)  - fake latitude to use
-- `simulateAltitude`      (number)  - fake altitude to use
-- `positionMinAccuracy`   (number)  - minimum accuracy in metres for GPS positions to be accepted.
-- `smoothingFactor`       (number)  - smoothing factor for sensors, the same concept as in original AR.js.
-- `enablePermissionDialog`(boolean) - decides if device orientation permission dialog is shown on iOS devices.
+- `simulateLatitude`           (number)  - fake latitude to use
+- `simulateLongitude`          (number)  - fake latitude to use
+- `simulateAltitude`           (number)  - fake altitude to use
+- `positionMinAccuracy`        (number)  - minimum accuracy in metres for GPS positions to be accepted.
+- `smoothingFactor`            (number)  - smoothing factor for sensors, the same concept as in original AR.js.
+- `enablePermissionDialog`     (boolean) - decides if device orientation permission dialog is s
+- `enableStyling `             (boolean) - Set iOS-look and feel styling for the permission dialog for device orientation
+- `preferConfirmDialog`        (boolean) - Use a standard confirm dialog rather than a custom element to grant device orientation permissions 
+- `orientationChangeThreshold` (number)  - threshold to detect orientation change (in radians)
 
 ## locar-entity-place
 

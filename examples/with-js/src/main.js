@@ -12,6 +12,7 @@ locarCamera.addEventListener('gpsupdate', e => {
         e.detail.position.coords.longitude != 0 && 
         firstLocation
     ) {
+           firstLocation = false;
         alert(`Got the initial location: longitude ${e.detail.position.coords.longitude}, latitude ${e.detail.position.coords.latitude}`);
 
         const boxProps = [{
@@ -48,8 +49,6 @@ locarCamera.addEventListener('gpsupdate', e => {
             });
             scene.appendChild(box);
         }
-        
-        firstLocation = false;
     }
 });
 
