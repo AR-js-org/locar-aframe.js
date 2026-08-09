@@ -14,6 +14,7 @@ locarCamera.addEventListener('gpsupdate', async(e) => {
         pos.coords.longitude != 0 && 
         firstLocation
     ) {
+        firstLocation = false;
         alert(`Got the initial location: longitude ${pos.coords.longitude}, latitude ${pos.coords.latitude}`);
        
         const response = await fetch(`https://hikar.org/webapp/map?bbox=${pos.coords.longitude-0.02},${pos.coords.latitude-0.02},${pos.coords.longitude+0.02},${pos.coords.latitude+0.02}&layers=poi&outProj=4326`);
@@ -39,8 +40,7 @@ locarCamera.addEventListener('gpsupdate', async(e) => {
             composite.appendChild(text);
             scene.appendChild(composite);
         });
- 
-        firstLocation = false;
+
     }
 });
 

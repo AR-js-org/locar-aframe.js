@@ -1,5 +1,9 @@
 # Updates
 
+## 0.2.0 (2026-08-09)
+
+Now using LocAR 0.2.x. Thus, webcam now uses `video` element (addressing stretched camera feed issue). Additionally, the full range of `DeviceOrientationControls` options are now available as parameters to the `locar-camera` component.
+
 ## 0.1.2 (2025-10-11)
 
 Now handles the possibility of `locar-camera` not being initialised when we try to set the position of a `locar-entity-place` (see issue #3). This appears to occur when we attach `locar-entity-place` to `a-entity` entities, rather than specific primitives such as `a-box`.
